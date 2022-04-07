@@ -13,8 +13,26 @@ const writeFile = fileContent => {
             // if ok, resolve promise and send data to .then method
             resolve({
                 ok: true,
-                message: "File created!"
+                message: "HTML File created!"
             });
         });
     });
 };
+
+const copyFile = () => {
+    return new Promise((resolve, reject) => {
+        fs.copyFile("./src/style.css", "./dist/index.html", err => {
+            if (err) {
+                reject(err);
+                return;
+            };
+
+            resolve({
+                ok: true,
+                message: "Stylesheet created!"
+            });
+        });
+    });
+};
+
+module.exports = {writeFile, copyFile};
