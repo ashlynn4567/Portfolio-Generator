@@ -1,0 +1,27 @@
+{
+  "name": "018.portfolio-generator",
+  "version": "1.0.0",
+  "description": "an application that generates a portfolio webpage using command line prompts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashlynn4567/Portfolio-Generator.git"
+  },
+  "keywords": [
+    "portfolio",
+    "generator",
+    "bootcamp"
+  ],
+  "author": "ashley smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashlynn4567/Portfolio-Generator/issues"
+  },
+  "homepage": "https://github.com/ashlynn4567/Portfolio-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}
